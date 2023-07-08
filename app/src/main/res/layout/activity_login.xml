@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Inicio de secion"
+            android:textSize="60sp"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="25dp">
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ingreso con usuario y contraseña institucional"
+            android:textSize="20sp"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="25dp">
+        </TextView>
+        <EditText
+            android:id="@+id/textname"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Usuario"
+            android:textSize="15sp"
+            android:layout_marginTop="100dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/rounded_edittext">
+        </EditText>
+        <EditText
+            android:id="@+id/textpassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Contraseña"
+            android:textSize="15sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:inputType="textPassword"
+            android:background="@drawable/rounded_edittext">>
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        tools:ignore="MissingConstraints"
+        android:gravity="center_horizontal">
+        <Button
+            android:id="@+id/btn_inicio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Iniciar Sesion"
+            android:layout_marginTop="550dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:backgroundTint="@color/white"
+
+            android:background="@drawable/rounded_button">
+        </Button>
+        <TextView
+            android:id="@+id/btn_registrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="¿No tienes cuenta?"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center">
+        </TextView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
